@@ -21,7 +21,7 @@ export default defineConfig({
     // },
 
     sidebar: {
-      '/.vitepress/document-data/document/': [
+      '/Tools-document/.vitepress/document-data/document/': [
         { 
           text: '爱吃饭的小Q的文档',
           items: [
@@ -32,7 +32,7 @@ export default defineConfig({
         }
       ],
 
-      '/.vitepress/document-data/study/C/': [
+      '/Tools-document/.vitepress/document-data/study/C/': [
         {
           text: 'C语言',
           items: [
