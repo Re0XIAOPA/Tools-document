@@ -12,13 +12,13 @@ hero:
   actions:
     - theme: brand
       text: 开始文档
-      link: /.vitepress/document-data/document/inde
+      link: /Start-Document
     - theme: brand
       text: GitHub
       link: https://github.com/Re0XIAOPA/Tools-document
     - theme: alt
       text: 介绍说明
-      link: /.vitepress/document-data/document/presentation
+      link: /Presentation-notes
 
 features:
   - title: C语言
