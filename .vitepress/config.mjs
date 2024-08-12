@@ -21,18 +21,17 @@ export default defineConfig({
     // },
 
     sidebar: {
-      "/.vitepress/document-data/document/": [
+      "/": [
         { 
           text: '爱吃饭的小Q的文档',
           items: [
-            { text: '前言', link: "/.vitepress/document-data/document/index" },
-            { text: '介绍说明', link: "/.vitepress/document-data/document/presentation" },
-            { text: '最后', link: "/.vitepress/document-data/document/end" },
+            { text: '前言', link: "/Start-Document" },
+            { text: '介绍说明', link: "/Presentation-notes" },
           ]
         }
       ],
 
-      "/.vitepress/document-data/study/C/": [
+      "/document/": [
         {
           text: 'C语言',
           items: [
@@ -53,7 +52,7 @@ export default defineConfig({
           {
             // 该部分的标题
             items: [
-              { text: 'C语言', link: "/.vitepress/document-data/study/C/C" },
+              { text: 'C语言', link: "/" },
               { text: 'HTML', link: '#' },
               { text: 'CSS', link: '#' },
               { text: 'Javascript', link: '#' },
