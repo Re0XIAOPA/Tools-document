@@ -21,24 +21,24 @@ export default defineConfig({
     // },
 
     sidebar: {
-      '/Tools-document/.vitepress/document-data/document/': [
+      "/Tools-document/.vitepress/document-data/document/": [
         { 
           text: '爱吃饭的小Q的文档',
           items: [
-            { text: '前言', link: '/document-data/document/index' },
-            { text: '介绍说明', link: '/document-data/document/presentation' },
-            { text: '最后', link: '/document-data/document/end' },
+            { text: '前言', link: "/.vitepress/document-data/document/index" },
+            { text: '介绍说明', link: "/.vitepress/document-data/document/presentation" },
+            { text: '最后', link: "/.vitepress/document-data/document/end" },
           ]
         }
       ],
 
-      '/Tools-document/.vitepress/document-data/study/C/': [
+      "/Tools-document/.vitepress/document-data/study/C/": [
         {
           text: 'C语言',
           items: [
-            { text: '前言', link: '/' },
-            { text: '入门', link: '/' },
-            { text: '开始', link: '/' }
+            { text: '前言', link: "/" },
+            { text: '入门', link: "/" },
+            { text: '开始', link: "/" }
           ]
         }
       ],
