@@ -6,7 +6,7 @@ export default defineConfig({
   description: "科技工具X - Tools文档",
   base: '/Tools-document/',
   head: [
-    ['link', { rel: 'icon', href: '/background.svg'}],
+    ['link', { rel: 'icon', href: '/Tools-document/background.svg'}],
   ], 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,7 +14,7 @@ export default defineConfig({
     outlineTitle:"文章导航",
     outline:[2,6],
 
-    logo: '/public/background.svg',
+    logo: '/Tools-document/background.svg',
 
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
