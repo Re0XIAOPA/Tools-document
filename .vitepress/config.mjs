@@ -14,7 +14,7 @@ export default defineConfig({
     outlineTitle:"文章导航",
     outline:[2,6],
 
-    logo: '/Tools-document/background.svg',
+    logo: "/background.svg",
 
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
