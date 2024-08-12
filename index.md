@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始文档
-      link: /.vitepress/document-data/document/index
+      link: /Tools-document/document-data/document/index
     - theme: brand
       text: GitHub
       link: https://github.com/Re0XIAOPA/Tools-document
