@@ -14,7 +14,7 @@ export default defineConfig({
     outlineTitle:"文章导航",
     outline:[2,6],
 
-    logo: '/Tools-document/public/background.svg',
+    logo: '/public/background.svg',
 
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
@@ -25,9 +25,9 @@ export default defineConfig({
         { 
           text: '爱吃饭的小Q的文档',
           items: [
-            { text: '前言', link: '/Tools-document/.vitepress/document-data/document/index' },
-            { text: '介绍说明', link: '/Tools-document/.vitepress/document-data/document/presentation' },
-            { text: '最后', link: '/Tools-document/.vitepress/document-data/document/end' },
+            { text: '前言', link: '/.vitepress/document-data/document/index' },
+            { text: '介绍说明', link: '/.vitepress/document-data/document/presentation' },
+            { text: '最后', link: '/.vitepress/document-data/document/end' },
           ]
         }
       ],
@@ -53,7 +53,7 @@ export default defineConfig({
           {
             // 该部分的标题
             items: [
-              { text: 'C语言', link: '/Tools-document/.vitepress/document-data/study/C/C' },
+              { text: 'C语言', link: '/.vitepress/document-data/study/C/C' },
               { text: 'HTML', link: '#' },
               { text: 'CSS', link: '#' },
               { text: 'Javascript', link: '#' },
