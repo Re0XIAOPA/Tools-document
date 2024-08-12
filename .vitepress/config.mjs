@@ -6,7 +6,7 @@ export default defineConfig({
   description: "科技工具X - Tools文档",
   base: '/Tools-document/',
   head: [
-    ['link', { rel: 'icon', href: '/public/background.svg'}],
+    ['link', { rel: 'icon', href: '/Tools-document/public/background.svg'}],
   ], 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
