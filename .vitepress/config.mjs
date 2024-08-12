@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "科技工具X - Tools文档",
   description: "科技工具X - Tools文档",
+  base: '/Tools-document/',
   head: [
     ['link', { rel: 'icon', href: '/public/background.svg'}],
   ], 
