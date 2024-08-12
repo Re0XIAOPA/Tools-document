@@ -7,7 +7,7 @@ hero:
   text: "全栈系统学习编程"
   tagline: 每时每刻学习着  -  Learning all the time |                    记录学习的文档笔记  -  @爱吃饭的小Q   |
   image:
-    src: /Tools-document/public/background.svg
+    src: /public/background.svg
     alt: logo
   actions:
     - theme: brand
