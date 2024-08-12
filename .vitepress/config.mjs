@@ -53,7 +53,7 @@ export default defineConfig({
           {
             // 该部分的标题
             items: [
-              { text: 'C语言', link: '/document-data/study/C/C' },
+              { text: 'C语言', link: "/.vitepress/document-data/study/C/C" },
               { text: 'HTML', link: '#' },
               { text: 'CSS', link: '#' },
               { text: 'Javascript', link: '#' },
