@@ -7,18 +7,18 @@ hero:
   text: "全栈系统学习编程"
   tagline: 每时每刻学习着  -  Learning all the time |                    记录学习的文档笔记  -  @爱吃饭的小Q   |
   image:
-    src: /public/background.svg
+    src: /Tools-document/public/background.svg
     alt: logo
   actions:
     - theme: brand
       text: 开始文档
-      link: /.vitepress/document-data/document/index
+      link: /Tools-document/.vitepress/document-data/document/index
     - theme: brand
       text: GitHub
-      # link: /.vitepress/document-data/document/index
+      # link: /Tools-document/.vitepress/document-data/document/index
     - theme: alt
       text: 介绍说明
-      link: /.vitepress/document-data/document/presentation
+      link: /Tools-document/.vitepress/document-data/document/presentation
 
 features:
   - title: C语言
