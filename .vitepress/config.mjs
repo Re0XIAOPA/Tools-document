@@ -46,7 +46,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '代理', link: '/document/Tools.html' },
+      { text: '代理', link: 'https://re0xiaopa.github.io/web-demo/' },
       {
         text: '语言',
         items: [
