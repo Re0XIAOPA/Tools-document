@@ -27,6 +27,7 @@ export default defineConfig({
           items: [
             { text: '前言', link: "/Start-Document" },
             { text: '介绍说明', link: "/Presentation-notes" },
+            { text: 'Git使用', link: "/git-code" },
           ]
         }
       ],
