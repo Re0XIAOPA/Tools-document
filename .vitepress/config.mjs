@@ -28,10 +28,7 @@ export default defineConfig({
           items: [
             { text: '前言', link: "/Start-Document" },
             { text: '介绍说明', link: "/Presentation-notes" },
-<<<<<<< HEAD
             { text: 'Git使用', link: "/git-code" },
-=======
->>>>>>> a7a17984c4230e09941b14d0e1449f706ad6eaca
           ]
         }
       ],
@@ -40,15 +37,9 @@ export default defineConfig({
         {
           text: 'C语言',
           items: [
-<<<<<<< HEAD
             { text: '前言', link: "#" },
             { text: '入门', link: "#" },
             { text: '开始', link: "#" }
-=======
-            { text: '前言', link: "/" },
-            { text: '入门', link: "/" },
-            { text: '开始', link: "/" }
->>>>>>> a7a17984c4230e09941b14d0e1449f706ad6eaca
           ]
         }
       ],
@@ -57,11 +48,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-<<<<<<< HEAD
       { text: '代理', link: 'https://re0xiaopa.github.io/web-demo/' },
-=======
-      { text: '代理', link: '/document/Tools.html' },
->>>>>>> a7a17984c4230e09941b14d0e1449f706ad6eaca
       {
         text: '语言',
         items: [
