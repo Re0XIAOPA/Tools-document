@@ -994,7 +994,8 @@
                         <td>￥13.00/年 300G/月</td>
                         <td>超便宜、稳定、快速</td>
                         <td>
-                            <a href="https://needay.xyz/#/register?code=dWkLWMTf" target="_self">https://needay.xyz/#/register?code=dWkLWMTf</a>
+                            <a href="https://needay.xyz/#/register?code=dWkLWMTf"
+                                target="_self">https://needay.xyz/#/register?code=dWkLWMTf</a>
                         </td>
                     </tr>
 
@@ -1003,7 +1004,8 @@
                         <td>￥3.58/月 100G/月</td>
                         <td>超便宜、稳定</td>
                         <td>
-                            <a href="https://mitce.com/aff.php?aff=3878" target="_self">https://mitce.com/aff.php?aff=3878</a>
+                            <a href="https://mitce.com/aff.php?aff=3878"
+                                target="_self">https://mitce.com/aff.php?aff=3878</a>
                         </td>
                     </tr>
 
@@ -1174,9 +1176,54 @@
             const mask = document.getElementById('mask'); // 遮罩层
             // 获取返回顶部按钮
             const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
             let cancelCount = parseInt(localStorage.getItem('cancelCount')) || 0;
             let hasAgreed = localStorage.getItem('hasAgreed') === 'true';
+            const startDate = new Date('2023-10-04'); // 修改为你想要的开始日期
 
+            function calculateLovedays() {
+                const now = new Date(); // 当前时间已经是北京时间
+                const diff = now - startDate;
+                const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+                const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+                const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+                const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1; // 加上开始的那一天
+                const totalHours = Math.floor(diff / (1000 * 60 * 60)) + 24; // 加上开始的那一天的24小时
+                const currentHour = now.getHours(); // 获取当前小时数
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                return {
+                    years: years,
+                    months: months,
+                    days: days,
+                    totalDays: totalDays,
+                    totalHours: totalHours,
+                    currentHour: currentHour,
+                    minutes: minutes,
+                    seconds: seconds
+                };
+            }
+
+            function printLovedays() {
+                const lovedays = calculateLovedays();
+
+                // 格式化输出
+                const formattedYearsMonthsDays = `相爱 ${lovedays.years} 年 ${lovedays.months} 月 ${lovedays.days} 日 ${lovedays.currentHour}:${lovedays.minutes}:${lovedays.seconds}`;
+                const formattedTotalDays = `相爱共 ${lovedays.totalDays} 天`;
+                const formattedTotalHours = `共 ${lovedays.totalHours} 小时`;
+
+                console.log(formattedYearsMonthsDays);
+                console.log(formattedTotalDays);
+                console.log(formattedTotalHours);
+                console.log('每30秒显示一次时间')
+            }
+
+            // 初始输出
+            printLovedays();
+
+            // 每隔一秒更新并输出
+            setInterval(printLovedays, 30000);
 
             function toggleScrollToTopButton() {
                 if (window.pageYOffset > 100) { // 当滚动超过 100px 时显示按钮
@@ -1275,7 +1322,7 @@
 
         // 定义相关信息
         const loverName = "唐小姐";
-        const message = "我爱她！超级超级爱她！人生目标搞钱搞钱，去把她娶回家，她当老大我当小弟！嘿嘿";
+        const message = "我爱她！超级超级爱她！人生目标搞钱搞钱，去把她娶回家，她当老大我当小弟！嘿嘿 \n\n\t2024.8.15\n\t我的宝宝! 女神大人！😭";
 
         // 构建输出信息
         const outputMessage = `\n\t我们的恋爱开始于: 2023年10月04日 \n\n\t我的恋人 ${loverName} \n\t她是一个美丽的娃娃\n\n\t${message}\n\n`;
@@ -1302,6 +1349,11 @@
 
         嘿嘿！ 我有女朋友喔！我有女朋友喔！ 
         欸嘿！ 欸嘿嘿！！ 欸嘿嘿嘿！！！
+
+        2024.8.15
+        宝宝！ 宝宝！ 我错啦！ 再也不分心日子了(哭泣)
+        给你准备好吃的喝的 回来迎接你的甜甜的日子！！！
+        给我吃多少个大逼斗都可以~qwq
     -->
 </body>
 
