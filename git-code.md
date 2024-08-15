@@ -76,7 +76,40 @@
     git remote add origin https://github.com/user-attachments/git-code.git
     ```
 
+### 部分命令
 
+    **查看远程仓库**
+    ```
+    git remote -v
+    ```
+    **添加远程仓库**
+    ```
+    git remote add origin https://github.com/user-attachments/git-code.git
+    ```
+    **推送到远程仓库**
+    ```
+    git push -u origin master
+    ```
+    **推送到远程仓库并创建分支**
+    ```
+    git push -u origin master --force-with-lease
+    ```
     
+    -----
+
+    **检查远程仓库的状态**
+    使用 git fetch 来获取远程仓库的最新状态，但不会自动合并到你的当前分支。
+    ```
+    git fetch origin
+    ```
+    **强制推送**
+    如果你确定你的更改不会覆盖远程仓库上其他人的工作，并且你想要强制推送你的更改，可以使用 --force 或 --force-with-lease 选项。注意：强制推送可能会覆盖远程仓库上的更改，这可能会影响其他协作者的工作。
+    ```
+    git push -u origin master --force
+    ```
+    **或者更安全的方式**
+    ```
+    git push -u origin master --force-with-lease
+    ```
 
 
