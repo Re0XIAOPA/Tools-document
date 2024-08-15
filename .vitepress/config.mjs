@@ -95,7 +95,31 @@ export default defineConfig({
             ]
           }
         ]
-      }
+      },
+
+      {
+        text: '更多',
+        items: [
+          {
+            // 也可以省略标题
+            text: '网站',
+            items: [
+              { text: '自仿AcFun网页模板', link: 'https://re0xiaopa.github.io/acfun-Website-templates/' },
+              { text: 'Steam', link: 'https://store.steampowered.com/join' }
+            ]
+          },
+          {
+            // 也可以省略标题
+            text: '动漫',
+            items: [
+              { text: '次元城动漫', link: 'https://www.cycanime.com/' },
+              { text: '囧次元', link: 'https://jcypc.net/' },
+              { text: 'omofun', link: 'https://omoget.com/' },
+              { text: 'MX动漫', link: 'http://www.mxdm.tv/' }
+            ]
+          },
+        ]
+      },
     ],
 
     // 设置搜索框的样式
