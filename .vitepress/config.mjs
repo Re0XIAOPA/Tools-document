@@ -26,7 +26,7 @@ export default defineConfig({
         { 
           text: '简介',
           items: [
-            { text: '什么是X-Tools', link: "/Presentation-notes" },
+            { text: '什么是X-Tools?', link: "/Presentation-notes" },
             { text: '快速开始', link: "/Start-Document" },
             { text: 'Git使用', link: "/git-code" },
             { text: '测试文档', link: "/zh/Example/markdown-examples" },
