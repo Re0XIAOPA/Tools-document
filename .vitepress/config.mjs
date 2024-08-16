@@ -12,7 +12,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    outlineTitle:"文章导航",
+    outlineTitle:"页面导航",
     outline:[2,6],
 
     logo: "/background.svg",
@@ -24,16 +24,19 @@ export default defineConfig({
     sidebar: {
       "/": [
         { 
-          text: '爱吃饭的小Q的文档',
+          text: '简介',
           items: [
-            { text: '前言', link: "/Start-Document" },
-            { text: '介绍说明', link: "/Presentation-notes" },
+            { text: '什么是X-Tools', link: "/Presentation-notes" },
+            { text: '快速开始', link: "/Start-Document" },
             { text: 'Git使用', link: "/git-code" },
+            { text: '测试文档', link: "/zh/Example/markdown-examples" },
+            { text: 'API测试文档', link: "/zh/Example/api-examples" },
+            { text: '返回首页', link: "/index" },
           ]
         }
       ],
 
-      "/document/": [
+      "/zh/c/": [
         {
           text: 'C语言',
           items: [
@@ -48,6 +51,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
+      { text: '简介', link: '/Start-Document', activeMatch: '^/Start-Document|^/Presentation-notes|^/git-code|^/zh/Example/markdown-examples|^/zh/Example/api-examples' },
       { text: '代理', link: 'https://re0xiaopa.github.io/web-demo/' },
       {
         text: '语言',

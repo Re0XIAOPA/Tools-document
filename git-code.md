@@ -1,6 +1,6 @@
 # Git 上传GitHub仓库使用
 
-## 0. 创建一个空仓库
+## 创建一个空仓库
 
 ![alt text](image.png)
 
