@@ -17,6 +17,19 @@ export default defineConfig({
 
     logo: "/background.svg",
 
+
+    markdown: {
+      setup(md) {
+        // 使用 shiki 的代码高亮功能
+        md.use(require('shiki'), {
+          // 你的 shiki 配置项
+          // 例如选择主题和语言
+          theme: 'nord',
+          langs: ['html', 'js', 'ts', 'css', 'json', 'md', 'bash']
+        })
+      }
+    },
+    
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
     // },
@@ -28,9 +41,19 @@ export default defineConfig({
           items: [
             { text: '什么是X-Tools?', link: "/Presentation-notes" },
             { text: '快速开始', link: "/Start-Document" },
+          ]
+        },
+        { 
+          text: '使用',
+          items: [
             { text: 'Git使用', link: "/git-code" },
             { text: '测试文档', link: "/zh/Example/markdown-examples" },
             { text: 'API测试文档', link: "/zh/Example/api-examples" },
+          ]
+        },
+        { 
+          text: '',
+          items: [
             { text: '返回首页', link: "/index" },
           ]
         }
@@ -120,6 +143,13 @@ export default defineConfig({
               { text: '囧次元', link: 'https://jcypc.net/' },
               { text: 'omofun', link: 'https://omoget.com/' },
               { text: 'MX动漫', link: 'http://www.mxdm.tv/' }
+            ]
+          },
+          {
+            // 也可以省略标题
+            text: '影视',
+            items: [
+              { text: '瓜子影视APP', link: 'https://www.gz99.co/' },
             ]
           },
         ]
