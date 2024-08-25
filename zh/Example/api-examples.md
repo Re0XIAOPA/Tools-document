@@ -48,4 +48,4 @@ const { site, theme, page, frontmatter } = useData()
 
 ## 更多
 
-请查看文档中的[运行时API的完整列表](https://vitepress.dev/reference/runtime-api#usedata)
+请查看文档中的[API的完整列表](https://vitepress.dev/reference/runtime-api#usedata)

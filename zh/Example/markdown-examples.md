@@ -83,4 +83,4 @@ export default {
 
 ## 更多
 
-请查看文档中的[全部折扣扩展列表](https://vitepress.dev/guide/markdown)。
+请查看文档中的[全部扩展列表](https://vitepress.dev/guide/markdown)。
