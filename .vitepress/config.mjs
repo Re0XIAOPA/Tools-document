@@ -7,13 +7,13 @@ export default defineConfig({
   lang: 'zh-CN',
   // base: '/Tools-document/',
   head: [
-    ['link', { rel: 'icon', href: '/background.svg'}],
-  ], 
+    ['link', { rel: 'icon', href: '/background.svg' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    outlineTitle:"页面导航",
-    outline:[2,6],
+    outlineTitle: "页面导航",
+    outline: [2, 6],
 
     logo: "/background.svg",
 
@@ -29,21 +29,21 @@ export default defineConfig({
         })
       }
     },
-    
+
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
     // },
 
     sidebar: {
       "/": [
-        { 
+        {
           text: '简介',
           items: [
             { text: '什么是X-Tools?', link: "/Presentation-notes" },
             { text: '快速开始', link: "/Start-Document" },
           ]
         },
-        { 
+        {
           text: '使用',
           items: [
             { text: 'Git使用', link: "/git-code" },
@@ -51,7 +51,7 @@ export default defineConfig({
             { text: 'API测试文档', link: "/zh/Example/api-examples" },
           ]
         },
-        { 
+        {
           text: '',
           items: [
             { text: '返回首页', link: "/index" },
@@ -69,7 +69,7 @@ export default defineConfig({
           ]
         }
       ],
-      
+
     },
 
     nav: [
@@ -80,21 +80,47 @@ export default defineConfig({
         text: '语言',
         items: [
           {
+            // 也可以省略标题
+            text: '2023年',
             // 该部分的标题
             items: [
-              { text: 'C语言', link: "#" },
               { text: 'HTML', link: '#' },
               { text: 'CSS', link: '#' },
-              { text: 'Javascript', link: '#' },
               { text: 'Java', link: '#' },
               { text: 'Linux', link: '#' },
               { text: 'MySQL', link: '#' },
+              { text: 'Javascript', link: '#' },
+            ]
+          },
+          {
+            // 也可以省略标题
+            text: '2024年',
+            items: [
+              { text: '软件工程', link: '#' },
+              { text: 'C语言程序设计', link: "#" },
+              { text: 'Web程序设计', link: '#' },
+              { text: 'Jquery&Ajax异步交互', link: '#' },
+              { text: 'BootStrap前端开发', link: '#' },
+            ]
+          },
+          {
+            // 也可以省略标题
+            text: '其它',
+            items: [
+              { text: 'Photoshop图形图像处理', link: '#' },
+            ]
+          },
+          {
+            // 也可以省略标题
+            text: 'Demo',
+            items: [
               { text: 'C++ (C嘎嘎)', link: '#' },
               { text: 'C#  (C嘎嘎嘎嘎)', link: '#' },
             ]
-          }
+          },
         ]
       },
+
 
       {
         text: '教程',
@@ -176,24 +202,24 @@ export default defineConfig({
         },
       },
     },
-  
-    
+
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Re0XIAOPA' },
-      { 
+      {
         icon: {
           svg: '<svg t="1723368162546" class="icon" viewBox="0 0 1084 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2744" width="256" height="256"><path d="M896.43834 165.698h-62.34l54.57-54.57c23.43-23.37 23.43-70.17 0-93.54-23.37-23.37-70.17-23.37-93.54 0l-155.88 148.17H452.17034l-155.94-148.23c-23.43-23.37-70.17-23.37-93.54 0-23.37 23.43-23.43 70.17 0 93.54l54.57 54.57h-62.34A192.983 192.983 0 0 0 0.00934 360.607v420.899c0 116.97 85.71 202.68 194.91 202.68h693.75a192.983 192.983 0 0 0 194.85-194.85v-428.73c7.83-109.14-77.94-194.91-187.08-194.91z m54.63 615.809a69.869 69.869 0 0 1-70.17 70.17h-678.27a69.869 69.869 0 0 1-70.109-70.17v-413.13a69.869 69.869 0 0 1 70.17-70.17h678.21a69.869 69.869 0 0 1 70.17 70.17v413.19z m-608.039-342.96a69.869 69.869 0 0 0-70.23 70.17v70.17a69.869 69.869 0 0 0 70.17 70.17 69.869 69.869 0 0 0 70.23-70.17v-70.17a69.869 69.869 0 0 0-70.23-70.17z m405.36 0a69.869 69.869 0 0 0-70.23 70.17v70.17a69.869 69.869 0 0 0 70.17 70.17 69.869 69.869 0 0 0 70.23-70.17v-70.17a69.869 69.869 0 0 0-70.17-70.17z" p-id="2745"></path></svg>',
-        }, 
-        link: 'https://space.bilibili.com/438125945' 
+        },
+        link: 'https://space.bilibili.com/438125945'
       },
       {
         icon: {
-         svg:'<svg t="1723712354637" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5474" width="20" height="20"><path d="M512 504L764.8 68.8h-134.4L512 275.2 393.6 70.4h-134.4L512 504zM819.2 70.4L512 600 204.8 68.8H0l512 886.4L1024 70.4H819.2z" fill="#888888" p-id="5475"></path></svg>',
-        }, 
-        link:'https://vitepress.dev/zh/'
+          svg: '<svg t="1723712354637" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5474" width="20" height="20"><path d="M512 504L764.8 68.8h-134.4L512 275.2 393.6 70.4h-134.4L512 504zM819.2 70.4L512 600 204.8 68.8H0l512 886.4L1024 70.4H819.2z" fill="#888888" p-id="5475"></path></svg>',
+        },
+        link: 'https://vitepress.dev/zh/'
       },
     ],
-    footer:{
+    footer: {
       copyright: "Copyright © 2024 爱吃饭的小Q. All rights reserved",
     },
   },
