@@ -109,8 +109,8 @@ export default defineConfig({
             text: '2024年',
             items: [
               { text: '软件工程', link: '#' },
-              { text: 'C语言程序设计', link: "#" },
-              { text: 'Web程序设计', link: '/zh/JavaWeb/eclipse-apache.md' },
+              { text: 'C语言', link: "#" },
+              { text: 'JavaWeb', link: '/zh/JavaWeb/eclipse-apache.md' },
               { text: 'Jquery&Ajax异步交互', link: '#' },
               { text: 'BootStrap前端开发', link: '#' },
             ]
