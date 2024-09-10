@@ -9,6 +9,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/background.svg' }],
   ],
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -27,7 +28,11 @@ export default defineConfig({
           theme: 'nord',
           langs: ['html', 'js', 'ts', 'css', 'json', 'md', 'bash']
         })
-      }
+      },
+      image: {
+        // 默认禁用图片懒加载
+        lazyLoading: true
+      },
     },
 
     // sidebar: {
@@ -52,12 +57,19 @@ export default defineConfig({
           ]
         },
         {
+          text: 'JavaWeb',
+          items: [
+            { text: 'Eclipse + Apache', link: "/zh/JavaWeb/eclipse-apache.md" },
+          ]
+        },
+        {
           text: '',
           items: [
             { text: '返回首页', link: "/index" },
           ]
         }
       ],
+
 
       "/zh/c/": [
         {
@@ -98,7 +110,7 @@ export default defineConfig({
             items: [
               { text: '软件工程', link: '#' },
               { text: 'C语言程序设计', link: "#" },
-              { text: 'Web程序设计', link: '#' },
+              { text: 'Web程序设计', link: '../zh/JavaWeb/eclipse-apache.md' },
               { text: 'Jquery&Ajax异步交互', link: '#' },
               { text: 'BootStrap前端开发', link: '#' },
             ]
