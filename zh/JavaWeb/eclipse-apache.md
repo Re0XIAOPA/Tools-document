@@ -95,7 +95,9 @@ src/com/example/MyServlet.java 或者 是一个文件路径，它表示在源代
 
 ### JSP文件无法在服务器上运行
 
-- 创建文件中没有勾选`Generate web.xml deployment descriptor`，导致Eclipse无法在服务器上运行。
+- [概率性问题]创建文件中没有勾选`Generate web.xml deployment descriptor`，导致Eclipse无法在服务器上运行。
+
+- [Tomcat服务器端口占用或者无法访问识别服务器] 重启Tomcat服务或者新建一个服务器，选择对应的版本重新运行。
 
 ### Eclipse服务器上运行端口占用
 
@@ -108,6 +110,8 @@ src/com/example/MyServlet.java 或者 是一个文件路径，它表示在源代
 
 ## END
 
-- 这只是课上的内容
+- 课上的内容
 
-没对文档观赏性画面优化，比较赶先去打马喽克了，有时间再优化吧。视频？要视频教程吗？？？
+- 没对文档观赏性画面优化，有时间再优化。
+
+- 有没有视频？视频教程？需要？
