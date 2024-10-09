@@ -98,27 +98,27 @@ export default defineConfig({
         items: [
           {
             // 也可以省略标题
-            text: '2023年',
-            // 该部分的标题
-            items: [
-              { text: 'None', link: '#' },
-              // { text: 'HTML', link: '#' },
-              // { text: 'CSS', link: '#' },
-              // { text: 'Java', link: '#' },
-              // { text: 'Linux', link: '#' },
-              // { text: 'MySQL', link: '#' },
-              // { text: 'Javascript', link: '#' },
-            ]
-          },
-          {
-            // 也可以省略标题
-            text: '2024年',
+            // text: '2024年',
             items: [
               // { text: '软件工程', link: '#' },
               // { text: 'C语言', link: "#" },
               { text: 'JavaWeb', link: '/zh/JavaWeb/eclipse-apache.md' },
               // { text: 'Jquery&Ajax异步交互', link: '#' },
               // { text: 'BootStrap前端开发', link: '#' },
+            ]
+          },
+        ]
+      },
+
+      {
+        text: '教程',
+        items: [
+          {
+            // 也可以省略标题
+            // text: '使用教程',
+            // 该部分的标题
+            items: [
+              { text: 'Git', link: '/zh/Git/git-code' },
             ]
           },
         ]
@@ -132,7 +132,7 @@ export default defineConfig({
             text: '网站',
             items: [
               { text: '自仿AcFun(已私密)', link: 'https://re0xiaopa.github.io/acfun-Website-templates/' },
-              { text: 'Steam', link: 'https://store.steampowered.com/join' }
+              { text: 'Steam(防小白迷路)', link: 'https://store.steampowered.com/join' }
             ]
           },
           {
@@ -140,9 +140,9 @@ export default defineConfig({
             text: '动漫',
             items: [
               { text: '次元城动漫发布页', link: 'https://www.cycity.pro/' },
-              { text: '囧次元', link: 'https://jcypc.net/' },
-              { text: 'omofun(复活啦)', link: 'https://omoget.com/' },
-              { text: 'MX动漫', link: 'http://www.mxdm.tv/' },
+              { text: '囧次元(日漫&弹幕)', link: 'https://jcypc.net/' },
+              { text: 'omofun(官网复活啦)', link: 'https://omoget.com/' },
+              { text: 'MX动漫(国漫&日漫)', link: 'http://www.mxdm.tv/' },
               { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
             ]
           },
@@ -150,7 +150,7 @@ export default defineConfig({
             // 也可以省略标题
             text: '影视',
             items: [
-              { text: '瓜子影视APP', link: 'https://www.gz99.co/' },
+              { text: '瓜子影视(可百度搜)', link: 'https://www.gz99.co/' },
               { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
             ]
           },
