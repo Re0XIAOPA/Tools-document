@@ -51,7 +51,7 @@ export default defineConfig({
         {
           text: '使用教程',
           items: [
-            { text: 'Git使用', link: "/zh/Git/git-code" },
+            { text: 'Git的使用', link: "/zh/Git/git-code" },
             { text: 'Vitepress搭建', link: '/zh/guide/getting-started'},
 
           ]
@@ -59,7 +59,7 @@ export default defineConfig({
         {
           text: 'JavaWeb',
           items: [
-            { text: 'Eclipse + Apache', link: "/zh/JavaWeb/eclipse-apache.md" },
+            { text: 'Eclipse + Tomcat', link: "/zh/JavaWeb/eclipse-apache.md" },
           ]
         },
         {
@@ -120,7 +120,8 @@ export default defineConfig({
             // text: '使用教程',
             // 该部分的标题
             items: [
-              { text: 'Git', link: '/zh/Git/git-code' },
+              { text: 'Git的使用', link: '/zh/Git/git-code' },
+              { text: 'Vitepress搭建', link: '/zh/guide/getting-started'},
             ]
           },
         ]
