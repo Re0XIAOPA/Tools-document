@@ -1,10 +1,13 @@
 # Git 上传GitHub仓库使用
 
+此页面待修改完善
+
 ## 创建一个空仓库
 
-![alt text](image.png)
+![alt text](/assets/image.png)
 
 ## 准备工作
+
 ```sh
 git config --global user.name "user-attachments" 
 
@@ -16,36 +19,45 @@ git add . git commit -m "first commit"
 
 git remote add origin https://github.com/user-attachments/git-code.git
 ```
+
 ## 添加远程仓库
+
 ```sh
 git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
 ```
+
 ## 提交代码
+
 ```sh
 git add . git commit -m "first commit" git push -u origin master
 ```
 
 ## 修改代码
+
 ```sh
 git add . git commit -m "modify code" git push -u origin master
 ```
 
 ## 删除远程仓库
+
 ```sh
 git remote rm origin git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
 ```
 
 ## 删除本地仓库
+
 ```sh
 git remote rm origin git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
 ```
 
 ## .gitignore 忽略文件
+
 ```sh
 .idea/ .vscode/ .gitignore .DS_Store node_modules/ dist/
 ```
 
 ## 部分命令
+
 ```sh
 **查看远程仓库**
 git remote -v
@@ -89,6 +101,7 @@ git config --global user.email "user-attachments@qq.com"
 ```
 
 ## 此页使用教程(我自己看的)
+
 ```sh
 git remote add origin 仓库地址 
 git remote add origin https://github.com/user-attachments/git-code.git

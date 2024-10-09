@@ -44,22 +44,27 @@ export default defineConfig({
         {
           text: '简介',
           items: [
-            { text: '什么是X-Tools?', link: "/Presentation-notes" },
-            { text: '快速开始', link: "/Start-Document" },
+            { text: '什么是X-Tools?', link: "/doc/Presentation-notes" },
+            { text: '快速开始', link: "/doc/Start-Document" },
           ]
         },
         {
-          text: '使用',
+          text: '使用教程',
           items: [
-            { text: 'Git使用', link: "/git-code" },
-            { text: '测试文档', link: "/zh/Example/markdown-examples" },
-            { text: 'API测试文档', link: "/zh/Example/api-examples" },
+            { text: 'Git使用', link: "/zh/Git/git-code" },
           ]
         },
         {
           text: 'JavaWeb',
           items: [
             { text: 'Eclipse + Apache', link: "/zh/JavaWeb/eclipse-apache.md" },
+          ]
+        },
+        {
+          text: '官方',
+          items: [
+            { text: '示例文档', link: "/zh/Example/markdown-examples" },
+            { text: 'API示例文档', link: "/zh/Example/api-examples" },
           ]
         },
         {
@@ -71,16 +76,16 @@ export default defineConfig({
       ],
 
 
-      "/zh/c/": [
-        {
-          text: 'C语言',
-          items: [
-            { text: '前言', link: "#" },
-            { text: '入门', link: "#" },
-            { text: '开始', link: "#" }
-          ]
-        }
-      ],
+      // "/zh/c/": [
+      //   {
+      //     text: 'C语言',
+      //     items: [
+      //       { text: '前言', link: "#" },
+      //       { text: '入门', link: "#" },
+      //       { text: '开始', link: "#" }
+      //     ]
+      //   }
+      // ],
 
     },
 
@@ -96,69 +101,26 @@ export default defineConfig({
             text: '2023年',
             // 该部分的标题
             items: [
-              { text: 'HTML', link: '#' },
-              { text: 'CSS', link: '#' },
-              { text: 'Java', link: '#' },
-              { text: 'Linux', link: '#' },
-              { text: 'MySQL', link: '#' },
-              { text: 'Javascript', link: '#' },
+              { text: 'None', link: '#' },
+              // { text: 'HTML', link: '#' },
+              // { text: 'CSS', link: '#' },
+              // { text: 'Java', link: '#' },
+              // { text: 'Linux', link: '#' },
+              // { text: 'MySQL', link: '#' },
+              // { text: 'Javascript', link: '#' },
             ]
           },
           {
             // 也可以省略标题
             text: '2024年',
             items: [
-              { text: '软件工程', link: '#' },
-              { text: 'C语言', link: "#" },
+              // { text: '软件工程', link: '#' },
+              // { text: 'C语言', link: "#" },
               { text: 'JavaWeb', link: '/zh/JavaWeb/eclipse-apache.md' },
-              { text: 'Jquery&Ajax异步交互', link: '#' },
-              { text: 'BootStrap前端开发', link: '#' },
+              // { text: 'Jquery&Ajax异步交互', link: '#' },
+              // { text: 'BootStrap前端开发', link: '#' },
             ]
           },
-          {
-            // 也可以省略标题
-            text: '其它',
-            items: [
-              { text: 'Photoshop图形图像处理', link: '#' },
-            ]
-          },
-          {
-            // 也可以省略标题
-            text: 'Demo',
-            items: [
-              { text: 'C++ (C嘎嘎)', link: '#' },
-              { text: 'C#  (C嘎嘎嘎嘎)', link: '#' },
-            ]
-          },
-        ]
-      },
-
-
-      {
-        text: '教程',
-        items: [
-          {
-            // 也可以省略标题
-            text: 'none',
-            items: [
-              { text: ' ', link: '...' },
-              { text: ' ', link: '...' }
-            ]
-          }
-        ]
-      },
-
-      {
-        text: '答案',
-        items: [
-          {
-            // 也可以省略标题
-            text: 'none',
-            items: [
-              { text: ' ', link: '...' },
-              { text: ' ', link: '...' }
-            ]
-          }
         ]
       },
 
@@ -169,7 +131,7 @@ export default defineConfig({
             // 也可以省略标题
             text: '网站',
             items: [
-              { text: '自仿AcFun网页模板', link: 'https://re0xiaopa.github.io/acfun-Website-templates/' },
+              { text: '自仿AcFun(已私密)', link: 'https://re0xiaopa.github.io/acfun-Website-templates/' },
               { text: 'Steam', link: 'https://store.steampowered.com/join' }
             ]
           },
@@ -177,10 +139,11 @@ export default defineConfig({
             // 也可以省略标题
             text: '动漫',
             items: [
-              { text: '次元城动漫', link: 'https://www.cycanime.com/' },
+              { text: '次元城动漫发布页', link: 'https://www.cycity.pro/' },
               { text: '囧次元', link: 'https://jcypc.net/' },
-              { text: 'omofun', link: 'https://omoget.com/' },
-              { text: 'MX动漫', link: 'http://www.mxdm.tv/' }
+              { text: 'omofun(复活啦)', link: 'https://omoget.com/' },
+              { text: 'MX动漫', link: 'http://www.mxdm.tv/' },
+              { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
             ]
           },
           {
@@ -188,6 +151,7 @@ export default defineConfig({
             text: '影视',
             items: [
               { text: '瓜子影视APP', link: 'https://www.gz99.co/' },
+              { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
             ]
           },
         ]
