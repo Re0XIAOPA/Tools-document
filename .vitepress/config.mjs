@@ -52,6 +52,8 @@ export default defineConfig({
           text: '使用教程',
           items: [
             { text: 'Git使用', link: "/zh/Git/git-code" },
+            { text: 'Vitepress搭建', link: '/zh/guide/getting-started'},
+
           ]
         },
         {
