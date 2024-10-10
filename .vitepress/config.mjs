@@ -45,7 +45,7 @@ export default defineConfig({
           text: '简介',
           items: [
             { text: '什么是X-Tools?', link: "/doc/Presentation-notes" },
-            { text: '快速开始', link: "/doc/Start-Document" },
+            { text: '开始文档', link: "/doc/Start-Document" },
           ]
         },
         {

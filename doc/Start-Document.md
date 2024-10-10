@@ -1,10 +1,10 @@
-# 快速开始
+# 开始文档
 
-页面待修改。
+页面完善中...
 
 ## 说明
 
-根据导航栏需求选址，所有内容在 [GitHub Pages](https://github.com/) 托管。<span style="color: #F08080;">代理导航部分</span>遇到网络问题请自行解决，若<span style="color: #F08080;">不同意</span>通知则会<span style="color: #F08080;">无法访问</span>，每12小时更新一次通知。
+根据导航栏需求选址，所有内容在 [GitHub Pages](https://github.com/) 托管。<strong style="color: #F08080;">代理导航部分</strong>遇到网络问题请自行解决，若<strong style="color: #F08080;">不同意</strong>通知则会<strong style="color: #F08080;">无法访问</strong>，每12小时更新一次通知。
 
 ## 部分问题
 
