@@ -63,7 +63,7 @@ bun add -D vitepress
 
 ::: tip 注意
 
-VitePress 是仅 ESM 的软件包。不要使用 `require()` 导入它，并确保最新的 `package.json` 包含 `"type": "module"`，或者更改相关文件的文件扩展名，例如 `.vitepress/config.js` 到 `.mjs`/`.mts`。更多详情请参考 [Vite 故障排除指南](http://vitejs.dev/guide/troubleshooting.html#this-package-is-esm-only)。此外，在异步 CJS 上下文中，可以使用 `await import('vitepress')` 代替。
+VitePress 是仅 ESM 的软件包。不要使用 `require()` 导入它，并确保最新的 `package.json` 包含 `"type": "module"`，或者更改相关文件的文件扩展名，例如 `.vitepress/config.js` 到 `.mjs`/`.mts`。更多详情请参考 [Vite 故障排除指南](https://cn.vite.dev/guide/troubleshooting)。此外，在异步 CJS 上下文中，可以使用 `await import('vitepress')` 代替。
 
 :::
 
@@ -136,7 +136,7 @@ bun vitepress init
  `docs` 目录作为 VitePress 站点的项目**根目录**。`.vitepress` 目录是 VitePress 配置文件、开发服务器缓存、构建输出和可选主题自定义代码的位置。
 
 :::tip
-默认情况下，VitePress 将其开发服务器缓存存储在 `.vitepress/cache` 中，并将生产构建输出存储在 `.vitepress/dist` 中。如果使用 Git，应该将它们添加到 `.gitignore` 文件中。也可以手动[配置](../reference/site-config#outdir)这些位置。
+默认情况下，VitePress 将其开发服务器缓存存储在 `.vitepress/cache` 中，并将生产构建输出存储在 `.vitepress/dist` 中。如果使用 Git，应该将它们添加到 `.gitignore` 文件中。也可以手动[配置](https://vitepress.dev/zh/reference/site-config#outdir)这些位置。
 :::
 
 ### 配置文件
@@ -156,7 +156,7 @@ export default {
 }
 ```
 
-还可以通过 `themeConfig` 选项配置主题的行为。有关所有配置选项的完整详细信息，请参见[配置参考](../reference/site-config)。
+还可以通过 `themeConfig` 选项配置主题的行为。有关所有配置选项的完整详细信息，请参见[配置参考](https://vitepress.dev/zh/reference/site-config)。
 
 ### 源文件
 
@@ -164,7 +164,7 @@ export default {
 
 VitePress 使用 **基于文件的路由**：每个 `.md` 文件将在相同的路径被编译成为 `.html` 文件。例如，`index.md` 将会被编译成 `index.html`，可以在生成的 VitePress 站点的根路径 `/` 进行访问。
 
-VitePress 还提供了生成简洁 URL、重写路径和动态生成页面的能力。这些将在[路由指南](./routing)中进行介绍。
+VitePress 还提供了生成简洁 URL、重写路径和动态生成页面的能力。这些将在[路由指南](https://vitepress.dev/zh/guide/routing)中进行介绍。
 
 ## 启动并运行 {#up-and-running}
 
@@ -226,18 +226,18 @@ bun vitepress dev docs
 
 :::
 
-更多的命令行用法请参见 [CLI 参考](../reference/cli)。
+更多的命令行用法请参见 [CLI 参考](https://vitepress.dev/zh/reference/cli)。
 
 开发服务应该会运行在 `http://localhost:5173` 上。在浏览器中访问 URL 以查看新站点的运行情况吧！
 
 ## 更多配置参考
 
-- 想要进一步了解 Markdown 文件是怎么映射到对应的 HTML，请继续阅读[路由指南](./routing)。
+- 想要进一步了解 Markdown 文件是怎么映射到对应的 HTML，请继续阅读[路由指南](https://vitepress.dev/zh/guide/routing)。
 
-- 要了解有关可以在页面上执行的操作的更多信息，例如编写 Markdown 内容或使用 Vue 组件，请参见指南的“编写”部分。一个很好的起点是了解 [Markdown 扩展](./markdown)。
+- 要了解有关可以在页面上执行的操作的更多信息，例如编写 Markdown 内容或使用 Vue 组件，请参见指南的“编写”部分。一个很好的起点是了解 [Markdown 扩展](https://vitepress.dev/zh/guide/markdown)。
 
-- 要探索默认文档主题提供的功能，请查看[默认主题配置参考](../reference/default-theme-config)。
+- 要探索默认文档主题提供的功能，请查看[默认主题配置参考](https://vitepress.dev/zh/reference/default-theme-config)。
 
-- 如果想进一步自定义站点的外观，参见[扩展默认主题](./extending-default-theme)或者[构建自定义主题](./custom-theme)。
+- 如果想进一步自定义站点的外观，参见[扩展默认主题](https://vitepress.dev/zh/guide/extending-default-theme)或者[构建自定义主题](https://vitepress.dev/zh/guide/custom-theme)。
 
-- 文档成形以后，务必阅读[部署指南](./deploy)。
+- 文档成形以后，务必阅读[部署指南](https://vitepress.dev/zh/guide/deploy)。
