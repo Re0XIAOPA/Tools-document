@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "科技工具X - Tools文档"
-  text: "全栈系统学习编程"
+  # text: "全栈系统学习编程"
+  text: "编程学习文档笔记"
   tagline: 每时每刻学习着  -  Learning all the time |                    记录学习的文档笔记  -  @爱吃饭的小Q   |
   image:
     src: /background.svg
@@ -23,9 +24,9 @@ hero:
 features:
   - title: C语言
     details: C语言是一种高效、跨平台的编程语言，广泛应用于系统软件开发和嵌入式系统。
-  - title: C++ (C嘎嘎)
+  - title: C++
     details: C++是面向对象的编程语言，继承并扩展了C语言，支持泛型编程和异常处理。
-  - title: C#  (C嘎嘎嘎嘎)
+  - title: C#
     details: C#是一种面向对象的编程语言，由微软开发，用于.NET框架，支持多种编程式。
   - title: HTML
     details: HTML是网页内容描述语言，用标签定义网页结构，是构建互联网的基础技术之一。

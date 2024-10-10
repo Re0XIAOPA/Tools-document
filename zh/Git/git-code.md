@@ -56,13 +56,23 @@ git config --global --unset user.email
 
 |  命令   | 备注  |
 |  ----  | ----  |
-| git status  | 查看仓库的改变情况，会有相关的提示操作出现 |
-| git add  |  直接添加所有改动的文件 |
-| git commit -m "note"  | 确认生成本地的版本，note是 版本特点说明 |
+| git init  | 初始化本地仓库 |
+| git add  |  添加改动的文件到暂存区 |
+| git status  | 查看仓库的状态，包括未提交、已提交、未暂存、已暂存、未跟踪文件 |
+| git commit -m "提交信息"  | 提交更改 |
 | git push  | 将改动上传到github，若没有指定分支，则需要使用git push origin master |
-| git log  | 查看版本更新情况 |
-| git reset -hard x  | 回退到某个本地版本,x为git log中出现的hash值的前七位 |
-| git clean -xf  | 清除所有的未提交文件 |
+| git pull  | 取远程仓库的最新代码，需指定分支，则使用git pull origin master |
+| git log  | 查看提交历史情况 |
+| git branch 分支名 | 创建分支 |
+| git checkout 分支名 | 切换分支 |
+| git merge 分支名  | 合并分支 |
+| git remote add origin 仓库地址  | 将本地仓库与远程仓库关联 |
+| git remote -v  | 查看关联的远程仓库 |
+| git remote rm origin origin | 删除远程仓库关联 |
+| git clone 仓库地址  | 克隆远程仓库到本地 |
+| git -v  | 查看Git版本信息 |
+<!-- | git reset -hard x  | 回退到某个本地版本,x为git log中出现的hash值的前七位 |
+| git clean -xf  | 清除所有的未提交文件 | -->
 
 |  git push 说明  |  备注  |
 |  ----  | ----  |
@@ -184,8 +194,12 @@ ssh-keygen -t ed25519 -C "你的Gitee使用或注册的邮箱"
 ```
 
 :::tip **提示**
-Gitee的密钥类型被只认为ed25519，所以生成密钥时需要指定该密钥类型，命令如下：
+Gitee的密钥类型被只认为ed25519，所以生成密钥时需要指定该密钥类型，命令如下：  
+
+```sh
 ssh-keygen -t ed25519 -C "你的Gitee使用或注册的邮箱"  
+```
+
 :::
 >
 > **设置 Gitee 的 ssh key 文件名为 id_rsa_gitee**
@@ -291,3 +305,5 @@ ssh -T git@gitee.com
 ## 配置Git
 
 > [点击跳转](#git-config)
+
+文档还在完善中...
