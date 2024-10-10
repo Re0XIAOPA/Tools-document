@@ -1,108 +1,126 @@
-# Git 上传GitHub仓库使用
+# Git快速上手使用
 
-此页面待修改完善
+## Git安装
 
-## 创建一个空仓库
+- Git下载：[点击下载](https://git-scm.com/)
 
-![alt text](/assets/image.png)
+- 安装无脑下一步即可,不建议路径有中文字符
 
-## 准备工作
+## Git基本使用
 
-```sh
-git config --global user.name "user-attachments" 
+> GUI为用户界面模式
+>
+> Bash为命令行模式
 
-git config --global user.email "user-attachments@qq.com"
+### Git账户配置
 
-git init
+::: tip **提示**
 
-git add . git commit -m "first commit"
+若想同时配置Gitee和Github或者GitLab等其它仓库，可暂时忽略此步
 
-git remote add origin https://github.com/user-attachments/git-code.git
-```
+:::
 
-## 添加远程仓库
+**全局配置**
 
-```sh
-git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
-```
-
-## 提交代码
+> 配置账户名
 
 ```sh
-git add . git commit -m "first commit" git push -u origin master
+git config --global user.name "你的名字"
 ```
 
-## 修改代码
+> 配置账户邮箱
 
 ```sh
-git add . git commit -m "modify code" git push -u origin master
+git config --global user.email "你的邮箱"
 ```
 
-## 删除远程仓库
+**查看全局设置**
 
 ```sh
-git remote rm origin git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
+git config --global -l
 ```
 
-## 删除本地仓库
+**删除全局设置**
 
 ```sh
-git remote rm origin git remote add origin https://github.com/user-attachments/git-code.git git push -u origin master
+git config --global --unset user.name
 ```
-
-## .gitignore 忽略文件
 
 ```sh
-.idea/ .vscode/ .gitignore .DS_Store node_modules/ dist/
+git config --global --unset user.email
 ```
 
-## 部分命令
+### Git常用命令{#git-cmd}
 
+|  命令   | 备注  |
+|  ----  | ----  |
+| git status  | 查看仓库的改变情况，会有相关的提示操作出现 |
+| git add  |  直接添加所有改动的文件 |
+| git commit -m "note"  | 确认生成本地的版本，note是 版本特点说明 |
+| git push  | 将改动上传到github，若没有指定分支，则需要使用git push origin master |
+| git log  | 查看版本更新情况 |
+| git reset -hard x  | 回退到某个本地版本,x为git log中出现的hash值的前七位 |
+| git clean -xf  | 清除所有的未提交文件 |
+
+|  git push 说明  |  备注  |
+|  ----  | ----  |
+| git push -u origin master --force  | 强制推送到远程仓库 |
+| git push -u origin master --force-with-lease  | 较为安全的强制推送到远程仓库 |
+
+::: tip **强制推送**
+如果你确定强制覆盖远程仓库之后不会出现问题，可以使用 `--force` 或 `--force-with-lease` 选项。
+:::
+
+::: danger **注意**
+强制推送会覆盖远程仓库上的更改，这可能会影响仓库的其他协作者的工作，如果没有其他协作者，可自行判断进行强制推送。
+:::
+
+## Git(乌龟)可视化工具安装
+
+::: tip **提示**
+TortoiseGit 是一个开源且基于 Windows Shell 的 Git 版本控制系统的界面。提供给了用户友好的图形界面，使得用户无需记忆和输入复杂的 [Git命令](#git-cmd)。
+:::
+
+- TortoiseGit下载：[点击下载](https://tortoisegit.org/download/)
+
+>[先安装再汉化]
+>
+> - 一个是TortoiseGit的程序安装包
+>
+> - 一个是TortoiseGit的汉化程序包
+>
+>
+>安装汉化之后TortoiseGit常规设置里修改语言文件
+
+![TortoiseGit](/assets/git/TortoiseGit.gif)
+
+## Git配置ssh连接
+
+::: tip **提示**
+可同时分别配置Github和Gitee的ssh连接，或者更多
+:::
+
+::: tip **配置必看**
+> **如果已经配置过Git，需要先清除Git的全局设置，如果没有配置就跳过这一步**
+>
+> **查看 是否存在用户名和邮箱**
+>
 ```sh
-**查看远程仓库**
-git remote -v
-
-
-**添加远程仓库**
-git remote add origin https://github.com/user-attachments/git-code.git
-
-
-**推送到远程仓库**
-git push -u origin master
-
-
-**推送到远程仓库并创建分支**
-git push -u origin master --force-with-lease
-
-
-**检查远程仓库的状态**
-使用 `git fetch` 来获取远程仓库的最新状态，但不会自动合并到你的当前分支。
-git fetch origin
-
-
-**强制推送**
-如果你确定你的更改不会覆盖远程仓库上其他人的工作，并且你想要强制推送你的更改，
-可以使用 `--force` 或 `--force-with-lease` 选项。注意：强制推送可能会覆盖远程仓库上的
-更改，这可能会影响其他协作者的工作。
-git push -u origin master --force
-
-
-**或者更安全的方式**
-git push -u origin master --force-with-lease
-
-
-注意这里使用了单个反引号 () 包围命令，而不是三个反引号 ``` 开始和结束。如果你确实需要在 VitePress 中使用三个反引号来表示代码块，你应该使用正确的语法高亮标记，例如 ````sh 或 bash` 来指定 shell 脚本语言，或者 markdown` 来指定 Markdown 语言。例如：
-
-markdown
-
-git config --global user.name "user-attachments"
-git config --global user.email "user-attachments@qq.com"
-
+git config --global --list
 ```
-
-## 此页使用教程(我自己看的)
-
+>
+> **删除 用户名和邮箱**
+>
 ```sh
-git remote add origin 仓库地址 
-git remote add origin https://github.com/user-attachments/git-code.git
+git config --global --unset user.name
 ```
+>
+```sh
+git config --global --unset user.email
+```
+>
+:::
+
+### 配置Github的ssh密钥
+
+### 配置Gitee的ssh密钥
