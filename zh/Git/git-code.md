@@ -123,13 +123,11 @@ git config --global --unset user.email
 
 ### 生成Github的ssh密钥
 
-> **进入本地磁盘`C:\Users\你的用户名` 创建`.ssh`文件夹**
+> **进入本地磁盘`C:\User\你的用户名` 创建`.ssh`文件夹**
 >
-> **进入`.ssh`文件夹下创建`config`文件**
+> **进入`.ssh`文件夹并右键运行Git Bash**
 >
-> **右键运行Git Bash**
->
-> **生成 key，邮件地址为 Github使用的邮件地址**
+> **先在`.ssh`文件夹内生成 key，邮件地址为 Github使用的邮件地址**
 >
 ```sh
 ssh-keygen -t rsa -C "你的Github使用或注册的邮箱"
@@ -173,17 +171,20 @@ The key's randomart image is:
 
 ### 生成Gitee的ssh密钥
 
-> **进入本地磁盘`C:\Users\你的用户名` 创建`.ssh`文件夹**
+> **进入本地磁盘`C:\User\你的用户名` 创建`.ssh`文件夹**
 >
-> **进入`.ssh`文件夹下创建`config`文件**
+> **进入`.ssh`文件夹并右键运行Git Bash**
 >
-> **右键运行Git Bash**
->
-> **生成 key，邮件地址为 Gitee使用的邮件地址**
+> **先在`.ssh`文件夹内生成 key，邮件地址为 Gitee使用的邮件地址**
 >
 ```sh
-ssh-keygen -t rsa -C "你的Gitee使用或注册的邮箱"
+ssh-keygen -t ed25519 -C "你的Gitee使用或注册的邮箱"
 ```
+
+:::tip **提示**
+Gitee的密钥类型被只认为ed25519，所以生成密钥时需要指定该密钥类型，命令如下：
+ssh-keygen -t ed25519 -C "你的Gitee使用或注册的邮箱"  
+:::
 >
 > **设置 Gitee 的 ssh key 文件名为 id_rsa_gitee**
 >
@@ -226,3 +227,60 @@ The key's randomart image is:
 ![Github](/assets/git/id_rsa_github.png)
 
 ![Gitee](/assets/git/id_rsa_gitee.png)
+
+### 配置
+
+::: tip **必看**
+**生成配置好密钥之后，还需在本地分别配置Github和Gitee的ssh连接**
+:::
+>
+> **进入`C:\User\你的用户名\.ssh`文件夹**
+>
+> **创建一个`config`文件**
+>
+>::: tip **创建提示**
+>**创建 `config` 文件可以用touch指令创建，也可以在新建文件时直接命名 `config.`**
+>:::
+>
+> ```dosc
+> #github
+> Host github.com
+> HostName ssh.github.com
+> PreferredAuthentications publickey
+> Port 443
+> IdentityFile ~/.ssh/id_rsa_github
+>
+> #gitee
+> Host gitee.com
+> HostName ssh.gitee.com
+> PreferredAuthentications publickey
+> Port 22
+> IdentityFile ~/.ssh/id_rsa_gitee
+> ```
+>
+>::: tip **提示**
+>**IdentityFile ~/.ssh/``id_rsa_github``**  
+>**``id_rsa_gitee``是生成Github密钥起的文件名，注意大小写**
+>
+>**IdentityFile ~/.ssh/``id_rsa_gitee``**  
+>**``id_rsa_gitee``是生成Gitee密钥起的文件名，注意大小写**
+>:::
+>
+## 测试连接
+
+### Github
+
+```sh
+ssh -T git@github.com
+```
+>
+>**如果出现账户名提示，则说明连接成功**
+>
+### Gitee
+
+```sh
+ssh -T git@gitee.com
+```
+>
+>**如果出现账户名提示，则说明连接成功**
+>
