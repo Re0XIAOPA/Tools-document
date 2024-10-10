@@ -121,6 +121,108 @@ git config --global --unset user.email
 >
 :::
 
-### 配置Github的ssh密钥
+### 生成Github的ssh密钥
 
-### 配置Gitee的ssh密钥
+> **进入本地磁盘`C:\Users\你的用户名` 创建`.ssh`文件夹**
+>
+> **进入`.ssh`文件夹下创建`config`文件**
+>
+> **右键运行Git Bash**
+>
+> **生成 key，邮件地址为 Github使用的邮件地址**
+>
+```sh
+ssh-keygen -t rsa -C "你的Github使用或注册的邮箱"
+```
+>
+> **设置 Github 的 ssh key 文件名为 id_rsa_github**
+>
+:::tip **提示**
+Enter file in which to save the key: id_rsa_github  
+[译文]输入要保存密钥的文件：id_rsa_github
+:::
+
+```sh
+L5516535379@LAPTOP-K422MN8R MINGW64 ~/.ssh
+ssh-keygen -t rsa -c “2415306912@qq.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key(/c/users/15516535379/.ssh/id_rsa): id_rsa_github
+Enter passphrase (empty for no passphrase):
+Entersame passphrase again:
+Your identification has been saved in id_rsa_github
+Your public key has been saved in id_rsa_github.pub
+The key fingerprint is:
+SHA256:I/FjIDewbuAFW3vKuzBtfEweLvhj7im8G0/4Bvc9jA 2415306912@q9.com
+The key's randomart image is:
++----TRSA 30721----+
+|     0+00*.+      |
+|  .   ==.O =  .   |
+|     0.E+0 +      |
+|      B.X..       |
+|      ..+..       |
+|      00*0+       |
++-----[SHA256]-----+
+```
+>
+> **完成后会在~/.ssh / 目录下生成以下文件**
+>
+> - id_rsa.github
+>
+> - id_rsa.github.pub
+>
+
+### 生成Gitee的ssh密钥
+
+> **进入本地磁盘`C:\Users\你的用户名` 创建`.ssh`文件夹**
+>
+> **进入`.ssh`文件夹下创建`config`文件**
+>
+> **右键运行Git Bash**
+>
+> **生成 key，邮件地址为 Gitee使用的邮件地址**
+>
+```sh
+ssh-keygen -t rsa -C "你的Gitee使用或注册的邮箱"
+```
+>
+> **设置 Gitee 的 ssh key 文件名为 id_rsa_gitee**
+>
+:::tip **提示**
+Enter file in which to save the key: id_rsa_gitee  
+[译文]输入要保存密钥的文件：id_rsa_gitee
+:::
+
+```sh
+L5516535379@LAPTOP-K422MN8R MINGW64 ~/.ssh
+ssh-keygen -t rsa -c “2415306912@qq.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key(/c/users/15516535379/.ssh/id_rsa): id_rsa_gitee
+Enter passphrase (empty for no passphrase):
+Entersame passphrase again:
+Your identification has been saved in id_rsa_gitee
+Your public key has been saved in id_rsa_gitee.pub
+The key fingerprint is:
+SHA256:LK2A7RhgW6cj9ELbYjmNJ9hKsOPBxegKq19uV+6JUAI 2415306912@q9.com
+The key's randomart image is:
++----TRSA 30721----+
+|     0+00*.+      |
+|  .   ==.O =  .   |
+|     0.E+0 +      |
+|      B.X..       |
+|      ..+..       |
+|      00*0+       |
++-----[SHA256]-----+
+```
+>
+> **完成后会在~/.ssh / 目录下生成以下文件**
+>
+> - id_rsa.gitee
+>
+> - id_rsa.gitee.pub
+>
+
+## 在Github和Gitee添加ssh密钥
+
+![Github](/assets/git/id_rsa_github.png)
+
+![Gitee](/assets/git/id_rsa_gitee.png)
