@@ -52,7 +52,7 @@ export default defineConfig({
           text: '使用教程',
           items: [
             { text: 'Git的使用', link: "/zh/Git/git-code" },
-            { text: 'Vitepress搭建', link: '/zh/guide/getting-started'},
+            { text: 'Vitepress搭建', link: '/zh/OS/vitepress-install'},
 
           ]
         },
@@ -121,7 +121,7 @@ export default defineConfig({
             // 该部分的标题
             items: [
               { text: 'Git的使用', link: '/zh/Git/git-code' },
-              { text: 'Vitepress搭建', link: '/zh/guide/getting-started'},
+              { text: 'Vitepress搭建', link: '/zh/OS/vitepress-install'},
             ]
           },
         ]
