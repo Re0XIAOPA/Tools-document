@@ -4,4 +4,4 @@
 
 ## 什么是X-Tools？
 
-<strong style="color:green;">科技工具X-Tools</strong> 这个名字起源是我想分享一些好用的工具而立的名，由于呢这个名字很大众末尾的“箱”字更改为了“X”。于此同时呢 <strong style="color:green;">科技工具X</strong> 这个名称也在微信公众号上存在，也由我本人维护更新 (<strong style="color:#F08080;">现在比较懒更新比较慢</strong>)
+<strong style="color:green;">科技工具X-Tools</strong> 这个名字的起源是我想分享一些好用的工具而立，由于这个名字很大众末尾的“箱”字更改为了“X”。与此同时呢 <strong style="color:green;">科技工具X</strong> 这个名称也在微信公众号上存在，由我本人维护更新 (<strong style="color:#F08080;">现在比较懒更新比较慢</strong>)

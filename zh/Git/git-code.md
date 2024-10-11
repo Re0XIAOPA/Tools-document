@@ -305,5 +305,3 @@ ssh -T git@gitee.com
 ## 配置Git
 
 > [点击跳转](#git-config)
-
-文档还在完善中...

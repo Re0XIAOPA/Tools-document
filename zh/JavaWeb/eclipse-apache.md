@@ -1,7 +1,5 @@
 # Eclipse + Apache Tomcat Web服务配置等问题
 
-- 观看本文档之前，建议暗黑模式下观赏，本文仅为教程。
-
 ## Apache Tomcat安装配置
 
 ### 安装&配置
@@ -107,9 +105,3 @@ src/com/example/MyServlet.java 或者 是一个文件路径，它表示在源代
 
 - [懒人推荐] 在 源文件中的 protected void doGet 方法下添加 `response.setContentType("text/html;charset=UTF-8");` 即可。
 - 编码问题，在Eclipse中设置项目编码为UTF-8，或者在Tomcat服务器上设置编码为UTF-8。
-
-## END
-
-- 暂未对文档观赏性优化和内容完善，有时间再优化。
-
-- 是否有视频需要？ 点个star联系我
