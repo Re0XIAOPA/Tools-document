@@ -116,15 +116,26 @@ export default defineConfig({
         text: '首页',
         link: '/'
       },
+      // {
+      //   text: '简介',
+      //   link: '/doc/Start-Document',
+      //   activeMatch: '^/Start-Document|^/Presentation-notes|^/git-code|^/zh/Example/markdown-examples|^/zh/Example/api-examples'
+      // },
+
       {
-        text: '简介',
-        link: '/Start-Document',
-        activeMatch: '^/Start-Document|^/Presentation-notes|^/git-code|^/zh/Example/markdown-examples|^/zh/Example/api-examples'
+        text: '公告',
+        items: [{
+          // 也可以省略标题
+          // text: '使用教程',
+          // 该部分的标题
+
+          items: [{
+            text: '网络数据安全管理条例',
+            link: '/zh/gov/国令第790号'
+          }, ]
+        }, ]
       },
-      {
-        text: '代理',
-        link: 'https://re0xiaopa.github.io/web-demo/'
-      },
+
       {
         text: '语言',
         items: [{
@@ -149,6 +160,7 @@ export default defineConfig({
           // 也可以省略标题
           // text: '使用教程',
           // 该部分的标题
+
           items: [{
               text: 'Git的使用',
               link: '/zh/Git/git-code'
@@ -164,6 +176,13 @@ export default defineConfig({
       {
         text: '更多',
         items: [{
+            text: '工具',
+            items: [{
+              text: '代理工具&&推荐机场',
+              link: 'https://re0xiaopa.github.io/web-demo/'
+            }, ]
+          },
+          {
             // 也可以省略标题
             text: '网站',
             items: [{
