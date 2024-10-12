@@ -300,10 +300,110 @@ ssh -T git@gitee.com
 >
 >**如果出现账户名提示，则说明连接成功**
 >
->**别忘了配置Git用户名和邮箱上传需要**
->
-## 配置Git
+>**别忘了  [配置Git](#git-config)  用户名和邮箱上传需要**
 
-> [点击跳转](#git-config)
+------  
 
-## Git的使用
+## Git 上传至 Gitee 和 GitHub 仓库完整指南
+
+## 概览
+
+本指南将详细指导你如何将本地代码仓库上传至 Gitee 和 GitHub，这两个是目前最流行的代码托管平台。
+
+## 前提条件
+
+- 确保已安装 Git。
+- 拥有 Gitee 和 GitHub 账号。
+- 在 Gitee 和 GitHub 上创建新仓库。
+
+## Git使用教程
+
+> Git上传到Gitee仓库和GitHub仓库大致步骤教程
+
+### 步骤 1: 安装 Git
+
+如果你尚未安装 Git，请访问 [Git 官网](https://git-scm.com/downloads) 下载并安装。
+
+### 步骤 2: 初始化本地仓库
+
+在项目根目录下，打开终端或命令行界面，执行以下命令初始化 Git 仓库：
+
+```bash
+git init
+```
+
+这将初始化一个新的 Git 仓库。
+
+### 步骤 3: 添加远程仓库
+
+**添加 Gitee 远程仓库**
+在终端或命令行界面执行以下命令，将你的本地仓库与 Gitee 仓库关联：
+
+```bash
+git remote add origin git@gitee.com:your_username/your_repository.git
+```
+
+将 your_username 替换为你的 Gitee 用户名，your_repository 替换为你的仓库名。
+
+**添加 GitHub 远程仓库**
+同样，在终端或命令行界面执行以下命令，将你的本地仓库与 GitHub 仓库关联：
+
+```bash
+git remote add origin git@github.com:your_username/your_repository.git
+```
+
+将 your_username 替换为你的 GitHub 用户名，your_repository 替换为你的仓库名。
+
+### 步骤 4: 添加文件并提交
+
+将项目文件添加到 Git 仓库，并进行初始提交：
+
+```bash
+git add .
+git commit -m "Initial commit"
+```
+
+### 步骤 5: 推送到远程仓库
+
+**推送至 Gitee**
+在终端或命令行界面执行以下命令，将本地仓库的更改推送至 Gitee 仓库：
+
+```bash
+git push -u origin master
+```
+
+**推送至 GitHub**
+在终端或命令行界面执行以下命令，将本地仓库的更改推送至 GitHub 仓库：
+
+```bash
+git push -u origin master
+```
+
+### 步骤 6: 配置 SSH 密钥（可选）
+
+为了更安全地连接到 Gitee 和 GitHub，推荐配置 SSH 密钥。
+
+**生成 SSH 密钥对：**
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
+```
+
+将生成的公钥（默认路径为 ~/.ssh/id_rsa.pub）添加到你的 Gitee 和 GitHub 账号的 SSH 密钥列表中。
+
+### 后续提交
+
+完成更改后，使用以下命令将更改推送至远程仓库：
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
+
+::: tip **注意事项**
+确保远程仓库地址正确无误。
+如果遇到权限问题，请检查 SSH 密钥是否已添加到 Gitee 和 GitHub 账号中。
+如果远程仓库 URL 发生变化，使用 git remote set-url origin new_url 更新。
+确保在推送之前，你的远程仓库已经正确设置。
+:::
