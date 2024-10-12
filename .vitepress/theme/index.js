@@ -1,11 +1,15 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+import {
+  h
+} from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
-import { useRoute } from 'vitepress';
+import {
+  useRoute
+} from 'vitepress';
 
 /** @type {import('vitepress').Theme} */
 export default {

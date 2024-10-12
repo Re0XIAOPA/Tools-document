@@ -1,4 +1,6 @@
-import { defineConfig } from 'vitepress'
+import {
+  defineConfig
+} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,7 +9,10 @@ export default defineConfig({
   lang: 'zh-CN',
   // base: '/Tools-document/',
   head: [
-    ['link', { rel: 'icon', href: '/background.svg' }],
+    ['link', {
+      rel: 'icon',
+      href: '/background.svg'
+    }],
   ],
   lastUpdated: true,
   themeConfig: {
@@ -40,40 +45,56 @@ export default defineConfig({
     // },
 
     sidebar: {
-      "/": [
-        {
+      "/": [{
           text: '简介',
-          items: [
-            { text: '什么是X-Tools?', link: "/doc/Presentation-notes" },
-            { text: '开始文档', link: "/doc/Start-Document" },
+          items: [{
+              text: '什么是X-Tools?',
+              link: "/doc/Presentation-notes"
+            },
+            {
+              text: '开始文档',
+              link: "/doc/Start-Document"
+            },
           ]
         },
         {
           text: '使用教程',
-          items: [
-            { text: 'Git的使用', link: "/zh/Git/git-code" },
-            { text: 'Vitepress搭建', link: '/zh/OS/vitepress-install'},
+          items: [{
+              text: 'Git的使用',
+              link: "/zh/Git/git-code"
+            },
+            {
+              text: 'Vitepress搭建',
+              link: '/zh/OS/vitepress-install'
+            },
 
           ]
         },
         {
           text: 'JavaWeb',
-          items: [
-            { text: 'Eclipse + Tomcat', link: "/zh/JavaWeb/eclipse-apache.md" },
-          ]
+          items: [{
+            text: 'Eclipse + Tomcat',
+            link: "/zh/JavaWeb/eclipse-apache.md"
+          }, ]
         },
         {
           text: '官方',
-          items: [
-            { text: '示例文档', link: "/zh/Example/markdown-examples" },
-            { text: 'API示例文档', link: "/zh/Example/api-examples" },
+          items: [{
+              text: '示例文档',
+              link: "/zh/Example/markdown-examples"
+            },
+            {
+              text: 'API示例文档',
+              link: "/zh/Example/api-examples"
+            },
           ]
         },
         {
           text: '',
-          items: [
-            { text: '返回首页', link: "/index" },
-          ]
+          items: [{
+            text: '返回首页',
+            link: "/index"
+          }, ]
         }
       ],
 
@@ -91,70 +112,106 @@ export default defineConfig({
 
     },
 
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '简介', link: '/Start-Document', activeMatch: '^/Start-Document|^/Presentation-notes|^/git-code|^/zh/Example/markdown-examples|^/zh/Example/api-examples' },
-      { text: '代理', link: 'https://re0xiaopa.github.io/web-demo/' },
+    nav: [{
+        text: '首页',
+        link: '/'
+      },
+      {
+        text: '简介',
+        link: '/Start-Document',
+        activeMatch: '^/Start-Document|^/Presentation-notes|^/git-code|^/zh/Example/markdown-examples|^/zh/Example/api-examples'
+      },
+      {
+        text: '代理',
+        link: 'https://re0xiaopa.github.io/web-demo/'
+      },
       {
         text: '语言',
-        items: [
-          {
-            // 也可以省略标题
-            // text: '2024年',
-            items: [
-              // { text: '软件工程', link: '#' },
-              // { text: 'C语言', link: "#" },
-              { text: 'JavaWeb', link: '/zh/JavaWeb/eclipse-apache.md' },
-              // { text: 'Jquery&Ajax异步交互', link: '#' },
-              // { text: 'BootStrap前端开发', link: '#' },
-            ]
-          },
-        ]
+        items: [{
+          // 也可以省略标题
+          // text: '2024年',
+          items: [
+            // { text: '软件工程', link: '#' },
+            // { text: 'C语言', link: "#" },
+            {
+              text: 'JavaWeb',
+              link: '/zh/JavaWeb/eclipse-apache.md'
+            },
+            // { text: 'Jquery&Ajax异步交互', link: '#' },
+            // { text: 'BootStrap前端开发', link: '#' },
+          ]
+        }, ]
       },
 
       {
         text: '教程',
-        items: [
-          {
-            // 也可以省略标题
-            // text: '使用教程',
-            // 该部分的标题
-            items: [
-              { text: 'Git的使用', link: '/zh/Git/git-code' },
-              { text: 'Vitepress搭建', link: '/zh/OS/vitepress-install'},
-            ]
-          },
-        ]
+        items: [{
+          // 也可以省略标题
+          // text: '使用教程',
+          // 该部分的标题
+          items: [{
+              text: 'Git的使用',
+              link: '/zh/Git/git-code'
+            },
+            {
+              text: 'Vitepress搭建',
+              link: '/zh/OS/vitepress-install'
+            },
+          ]
+        }, ]
       },
 
       {
         text: '更多',
-        items: [
-          {
+        items: [{
             // 也可以省略标题
             text: '网站',
-            items: [
-              { text: '自仿AcFun(已私密)', link: 'https://re0xiaopa.github.io/acfun-Website-templates/' },
-              { text: 'Steam(防小白迷路)', link: 'https://store.steampowered.com/join' }
+            items: [{
+                text: '自仿AcFun(已私密)',
+                link: 'https://re0xiaopa.github.io/acfun-Website-templates/'
+              },
+              {
+                text: 'Steam(防小白迷路)',
+                link: 'https://store.steampowered.com/join'
+              }
             ]
           },
           {
             // 也可以省略标题
             text: '动漫',
-            items: [
-              { text: '次元城动漫发布页', link: 'https://www.cycity.pro/' },
-              { text: '囧次元(日漫&弹幕)', link: 'https://jcypc.net/' },
-              { text: 'omofun(官网复活啦)', link: 'https://omoget.com/' },
-              { text: 'MX动漫(国漫&日漫)', link: 'http://www.mxdm.tv/' },
-              { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
+            items: [{
+                text: '次元城动漫发布页',
+                link: 'https://www.cycity.pro/'
+              },
+              {
+                text: '囧次元(日漫&弹幕)',
+                link: 'https://jcypc.net/'
+              },
+              {
+                text: 'omofun(官网复活啦)',
+                link: 'https://omoget.com/'
+              },
+              {
+                text: 'MX动漫(国漫&日漫)',
+                link: 'http://www.mxdm.tv/'
+              },
+              {
+                text: 'FreeOK(动漫&追剧)',
+                link: 'https://freeok.lol/'
+              }
             ]
           },
           {
             // 也可以省略标题
             text: '影视',
-            items: [
-              { text: '瓜子影视(可百度搜)', link: 'https://www.gz99.co/' },
-              { text: 'FreeOK(动漫&追剧)', link: 'https://freeok.lol/' }
+            items: [{
+                text: '瓜子影视(可百度搜)',
+                link: 'https://www.gz99.co/'
+              },
+              {
+                text: 'FreeOK(动漫&追剧)',
+                link: 'https://freeok.lol/'
+              }
             ]
           },
         ]
@@ -183,8 +240,10 @@ export default defineConfig({
     },
 
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Re0XIAOPA' },
+    socialLinks: [{
+        icon: 'github',
+        link: 'https://github.com/Re0XIAOPA'
+      },
       {
         icon: {
           svg: '<svg t="1723368162546" class="icon" viewBox="0 0 1084 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2744" width="256" height="256"><path d="M896.43834 165.698h-62.34l54.57-54.57c23.43-23.37 23.43-70.17 0-93.54-23.37-23.37-70.17-23.37-93.54 0l-155.88 148.17H452.17034l-155.94-148.23c-23.43-23.37-70.17-23.37-93.54 0-23.37 23.43-23.43 70.17 0 93.54l54.57 54.57h-62.34A192.983 192.983 0 0 0 0.00934 360.607v420.899c0 116.97 85.71 202.68 194.91 202.68h693.75a192.983 192.983 0 0 0 194.85-194.85v-428.73c7.83-109.14-77.94-194.91-187.08-194.91z m54.63 615.809a69.869 69.869 0 0 1-70.17 70.17h-678.27a69.869 69.869 0 0 1-70.109-70.17v-413.13a69.869 69.869 0 0 1 70.17-70.17h678.21a69.869 69.869 0 0 1 70.17 70.17v413.19z m-608.039-342.96a69.869 69.869 0 0 0-70.23 70.17v70.17a69.869 69.869 0 0 0 70.17 70.17 69.869 69.869 0 0 0 70.23-70.17v-70.17a69.869 69.869 0 0 0-70.23-70.17z m405.36 0a69.869 69.869 0 0 0-70.23 70.17v70.17a69.869 69.869 0 0 0 70.17 70.17 69.869 69.869 0 0 0 70.23-70.17v-70.17a69.869 69.869 0 0 0-70.17-70.17z" p-id="2745"></path></svg>',
