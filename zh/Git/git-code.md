@@ -334,27 +334,7 @@ git init
 
 这将初始化一个新的 Git 仓库。
 
-### 步骤 3: 添加远程仓库
-
-**添加 Gitee 远程仓库**  
-在终端或命令行界面执行以下命令，将你的本地仓库与 Gitee 仓库关联：
-
-```bash
-git remote add origin git@gitee.com:your_username/your_repository.git
-```
-
-将 your_username 替换为你的 Gitee 用户名，your_repository 替换为你的仓库名。
-
-**添加 GitHub 远程仓库**  
-同样，在终端或命令行界面执行以下命令，将你的本地仓库与 GitHub 仓库关联：
-
-```bash
-git remote add origin git@github.com:your_username/your_repository.git
-```
-
-将 your_username 替换为你的 GitHub 用户名，your_repository 替换为你的仓库名。
-
-### 步骤 4: 添加文件并提交
+### 步骤 3: 添加文件并提交
 
 将项目文件添加到 Git 仓库，并进行初始提交：
 
@@ -362,6 +342,34 @@ git remote add origin git@github.com:your_username/your_repository.git
 git add .
 git commit -m "Initial commit"
 ```
+
+### 步骤 4: 添加远程仓库
+
+**添加 Gitee 远程仓库**  
+在终端或命令行界面执行以下命令，将你的本地仓库与 Gitee 仓库关联
+
+```bash
+git remote add origin
+```
+
+::: tip
+git remote add origin 这里是你仓库地址  
+例如：  
+git remote add origin <git@gitee.com>:your_username/your_repository.git
+:::
+
+**添加 GitHub 远程仓库**  
+同样，在终端或命令行界面执行以下命令，将你的本地仓库与 GitHub 仓库关联：
+
+```bash
+git remote add origin
+```
+
+::: tip
+git remote add origin 这里是你仓库地址  
+例如：  
+git remote add origin <git@github.com>:your_username/your_repository.git
+:::
 
 ### 步骤 5: 推送到远程仓库
 
@@ -379,31 +387,15 @@ git push -u origin master
 git push -u origin master
 ```
 
-### 步骤 6: 配置 SSH 密钥（可选）
-
-为了更安全地连接到 Gitee 和 GitHub，推荐配置 SSH 密钥。
-
-**生成 SSH 密钥对：**
-
-```bash
-ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
-```
-
-将生成的公钥（默认路径为 ~/.ssh/id_rsa.pub）添加到你的 Gitee 和 GitHub 账号的 SSH 密钥列表中。
-
-### 后续提交
+### 总结提交步骤
 
 完成更改后，使用以下命令将更改推送至远程仓库：
 
 ```bash
-git add .
-git commit -m "Your commit message"
-git push
+git init                                # 初始化本地仓库
+git add .                               # 添加所有文件
+git status                              # 查看状态
+git commit -m "Your commit message"     # 提交更改
+git remote add origin 仓库地址           # 添加远程仓库
+git push -u origin master               # 推送到远程仓库
 ```
-
-::: tip **注意事项**
-确保远程仓库地址正确无误。
-如果遇到权限问题，请检查 SSH 密钥是否已添加到 Gitee 和 GitHub 账号中。
-如果远程仓库 URL 发生变化，使用 git remote set-url origin new_url 更新。
-确保在推送之前，你的远程仓库已经正确设置。
-:::
