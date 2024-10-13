@@ -336,7 +336,7 @@ git init
 
 ### 步骤 3: 添加远程仓库
 
-**添加 Gitee 远程仓库**
+**添加 Gitee 远程仓库**  
 在终端或命令行界面执行以下命令，将你的本地仓库与 Gitee 仓库关联：
 
 ```bash
@@ -345,7 +345,7 @@ git remote add origin git@gitee.com:your_username/your_repository.git
 
 将 your_username 替换为你的 Gitee 用户名，your_repository 替换为你的仓库名。
 
-**添加 GitHub 远程仓库**
+**添加 GitHub 远程仓库**  
 同样，在终端或命令行界面执行以下命令，将你的本地仓库与 GitHub 仓库关联：
 
 ```bash
@@ -365,14 +365,14 @@ git commit -m "Initial commit"
 
 ### 步骤 5: 推送到远程仓库
 
-**推送至 Gitee**
+**推送至 Gitee**  
 在终端或命令行界面执行以下命令，将本地仓库的更改推送至 Gitee 仓库：
 
 ```bash
 git push -u origin master
 ```
 
-**推送至 GitHub**
+**推送至 GitHub**  
 在终端或命令行界面执行以下命令，将本地仓库的更改推送至 GitHub 仓库：
 
 ```bash
