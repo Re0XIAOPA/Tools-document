@@ -123,20 +123,6 @@ export default defineConfig({
       // },
 
       {
-        text: '公告',
-        items: [{
-          // 也可以省略标题
-          // text: '使用教程',
-          // 该部分的标题
-
-          items: [{
-            text: '网络数据安全管理条例',
-            link: '/zh/gov/国令第790号'
-          }, ]
-        }, ]
-      },
-
-      {
         text: '语言',
         items: [{
           // 也可以省略标题
@@ -278,7 +264,8 @@ export default defineConfig({
       },
     ],
     footer: {
-      copyright: "Copyright © 2024 爱吃饭的小Q. All rights reserved",
+      copyright: 'Copyright © 2024 <a href="https://github.com/your_username" target="_blank" style="text-decoration: none;">爱吃饭的小Q</a>. All rights reserved',
     },
+
   },
 })
