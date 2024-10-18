@@ -216,6 +216,9 @@ export default defineConfig({
               {
                 text: 'FreeOK(动漫&追剧)',
                 link: 'https://freeok.lol/'
+              }, {
+                text: '追剧影视(动漫&追剧)',
+                link: 'http://zjuys.com/'
               }
             ]
           },
