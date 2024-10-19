@@ -64,6 +64,10 @@ export default defineConfig({
               link: "/zh/Git/git-code"
             },
             {
+              text: 'MySQL的安装和环境配置',
+              link: '/zh/MySQL/MySQL-install'
+            },
+            {
               text: 'Vitepress搭建',
               link: '/zh/OS/vitepress-install'
             },
@@ -154,6 +158,10 @@ export default defineConfig({
             {
               text: 'Vitepress搭建',
               link: '/zh/OS/vitepress-install'
+            },
+            {
+              text: 'MySQL的安装和环境配置',
+              link: '/zh/MySQL/MySQL-install'
             },
           ]
         }, ]
