@@ -2,7 +2,11 @@
 
 ## 下载源图包
 
-下载文件：<a href="/doc/answer/assets/assets.zip" download="2024软件工程头歌答案(常职).zip">点击下载</a>
+本地云下载：<a href="/doc/answer/assets.zip" download="2024软件工程头歌答案(常职).zip">点击下载</a>  (有概率无效下载)  
+
+蓝奏云下载：<a href="https://yemiao.lanzout.com/iplwD2d0f4je" target="_blank">点击下载</a>
+
+123盘下载：<a href="https://www.123684.com/s/92S0Vv-RCgld" target="_blank">点击下载</a>
 
 >目录
 >
