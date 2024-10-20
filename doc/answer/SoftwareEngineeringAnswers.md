@@ -2,7 +2,7 @@
 
 ## 下载源图包
 
-下载文件：<a href="/doc/answer/assets/assets.zip" download="2024软件工程头歌答案(常职).zip">点击下载</a>
+下载文件：<a href="/doc/answer/assets/assets.zip">点击下载</a>
 
 >目录
 >
