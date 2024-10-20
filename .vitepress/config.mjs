@@ -93,6 +93,13 @@ export default defineConfig({
           ]
         },
         {
+          text: '答案',
+          items: [{
+            text: '软件工程头歌答案',
+            link: "/doc/answer/SoftwareEngineeringAnswers"
+          }, ]
+        },
+        {
           text: '',
           items: [{
             text: '返回首页',
@@ -163,6 +170,14 @@ export default defineConfig({
               link: '/zh/MySQL/MySQL-install'
             },
           ]
+        }, ]
+      },
+
+      {
+        text: '答案',
+        items: [{
+          text: '软件工程头歌答案',
+          link: "/doc/answer/SoftwareEngineeringAnswers"
         }, ]
       },
 
