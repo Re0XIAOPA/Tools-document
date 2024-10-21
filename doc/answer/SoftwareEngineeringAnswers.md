@@ -2,11 +2,9 @@
 
 ## 下载源图包
 
-本地云下载：<a href="/doc/answer/assets.zip" download="2024软件工程头歌答案(常职).zip">点击下载</a>  (有概率无效下载)  
+蓝奏云下载：<a href="https://yemiao.lanzout.com/iy2932d1iitc" target="_blank">点击下载</a>
 
-蓝奏云下载：<a href="https://yemiao.lanzout.com/iplwD2d0f4je" target="_blank">点击下载</a>
-
-123盘下载：<a href="https://www.123684.com/s/92S0Vv-RCgld" target="_blank">点击下载</a>
+123盘下载：<a href="https://www.123684.com/s/92S0Vv-HNgld" target="_blank">点击下载</a>
 
 >目录
 >
@@ -19,13 +17,6 @@
 >群体化学习平台  
 >群智代码标注平台  
 >协同开发方法与平台  
->
->---
->
->暂补  
->
->---
->
 >UML关系图软件  
 >Git进阶之搭建Git服务器  
 
@@ -100,10 +91,39 @@ oi~ 小鬼，V我50请你吃疯狂星期四！
 ![基于任务的协同开发管理](/doc/answer/assets/协同开发方法与平台/基于任务的协同开发管理.png)  
 
 ## UML关系图软件
->
->暂无
->
+
+### 第一题 软件工程-用例图
+
+![软件工程-用例图](/doc/answer/assets/UML关系图软件/软件工程-用例图.png)  
+
+### 第二题 软件工程-流程图
+
+![软件工程-流程图](/doc/answer/assets/UML关系图软件/软件工程-流程图.png)  
+
+### 第三题 软件工程-类图
+
+![软件工程-类图](/doc/answer/assets/UML关系图软件/软件工程-类图.png)  
+
+### 第四题 软件工程-部署图
+
+![软件工程-部署图](/doc/answer/assets/UML关系图软件/软件工程-部署图.png)  
+
 ## UGit进阶之搭建Git服务器
+
+### 第一题 Git服务器搭建
+
+![Git服务器搭建](/doc/answer/assets/Git进阶之搭建Git服务器/Git服务器搭建.png)  
+
+### 第二题 配置别名
+
+![配置别名](/doc/answer/assets/Git进阶之搭建Git服务器/配置别名.png)  
+
+### 第三题 公共版本库的使用之码云、Github
+
+![公共版本库的使用之码云、Github](/doc/answer/assets/Git进阶之搭建Git服务器/公共版本库的使用之码云、Github.png)  
+
+::: tip 视频教程 (看不了?)  <a href="https://yemiao.lanzout.com/iNKDM2d1is1e" target="_blank">下载视频</a>
 >
->暂无
->
+<video width="640" height="480" controls><source src="/doc/answer/assets/Git进阶之搭建Git服务器/公共版本库的使用之码云、Github.mp4" type="video/mp4"></video>
+
+:::
