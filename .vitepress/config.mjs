@@ -43,7 +43,6 @@ export default defineConfig({
     // sidebar: {
     //   'document-data': set_sidebar('document-data'), // 文档数据部分侧边栏
     // },
-
     sidebar: {
       "/": [{
           text: '简介',
@@ -58,10 +57,14 @@ export default defineConfig({
           ]
         },
         {
-          text: '使用教程',
+          text: '教程',
           items: [{
               text: 'Git的使用',
               link: "/zh/Git/git-code"
+            },
+            {
+              text: 'Github520-Github加速',
+              link: "/zh/Github/github520"
             },
             {
               text: 'Vitepress搭建',
@@ -160,6 +163,10 @@ export default defineConfig({
           items: [{
               text: 'Git的使用',
               link: '/zh/Git/git-code'
+            },
+            {
+              text: 'Github520-Github加速',
+              link: "/zh/Github/github520"
             },
             {
               text: 'Vitepress搭建',
