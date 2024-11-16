@@ -64,7 +64,7 @@ export default defineConfig({
             },
             {
               text: 'Github520-Github加速',
-              link: "/zh/Github/github520"
+              link: "../zh/Github/Github520.md"
             },
             {
               text: 'Vitepress搭建',
@@ -166,7 +166,7 @@ export default defineConfig({
             },
             {
               text: 'Github520-Github加速',
-              link: "/zh/Github/github520"
+              link: "../zh/Github/Github520.md"
             },
             {
               text: 'Vitepress搭建',
