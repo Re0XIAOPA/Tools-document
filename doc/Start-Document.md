@@ -8,6 +8,6 @@
 
 | [我的世界] | [Github加速] | [头歌答案] |
 | --- | --- | --- |
-| [[点击跳转]](https://tavernce.shop/) | [[点击跳转]](/zh/Github/github520) | [[点击跳转]](/zh/Git/git-code) |
+| [[点击跳转]](https://tavernce.shop/) | [[点击跳转]](..//zh/Github/github520) | [[点击跳转]](../zh/Git/git-code) |
 
 
