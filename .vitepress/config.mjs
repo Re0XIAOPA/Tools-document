@@ -191,6 +191,12 @@ export default defineConfig({
       {
         text: '更多',
         items: [{
+            text: '联系',
+            items: [{
+              text: 'Telegram群',
+              link: 'https://t.me/+V6VofRqHk_k0ZDE9'
+            }, ]
+          }, {
             text: '工具',
             items: [{
               text: '代理工具&&推荐机场',
