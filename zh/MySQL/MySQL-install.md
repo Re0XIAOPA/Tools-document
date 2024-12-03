@@ -60,5 +60,52 @@ sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 ```
 
 ----
+## MySQL 安装步骤
 
-Pending...
+## 先进入安装的磁盘 
+比如在 D盘管理员打开cmd 就输入(英文输入法输入)   
+D:
+
+cd E:\SQL\mysql-8.0.28-winx64\bin   
+(E:\SQL\mysql-8.0.28-winx64\bin这个是路劲)
+
+## 初始化
+mysqld --initialize-insecure --user=mysql
+
+## 安装MySQL
+mysqld --install MySQL --defaults-file="\my.ini"
+
+mysqld --install MySQL --defaults-file="这里是路劲\my.ini"
+
+## 例子：
+mysqld --install MySQL --defaults-file="D:\MySQL\mysql-8.0.28-winx64\conf.ini"
+
+## 编辑系统环境变量
+
+启动MySQL（服务管理器）  
+win+r 输入 services.msc  
+或 搜索  
+服务 找到MySQL启动服务  
+
+
+## 启动MySQL（命令行）
+net start mysql
+
+## 登录MySQL
+mysql -h localhost -u root -p
+
+## 设置密码
+SET PASSWORD FOR root@localhost = '';  
+
+SET PASSWORD FOR root@localhost = '123456';  
+
+:::tip 注释
+-h后面参数是主机地址  
+-u后面是用户名  
+-p后面是用户的登录密码（一行下可不输入密码 enter后会显示enterpassword）
+:::
+
+## 退出mysql  
+第一种 exit  
+第二种 quit  
+第三种 \q  
