@@ -1,62 +1,16 @@
-# Eclipse + Apache Tomcat Web服务配置等问题
+# Eclipse + Tomcat 配置
 
-## Apache Tomcat安装配置
-
-### 安装&配置
-
-#### Apache Tomcat
-
-- 下载地址：<http://tomcat.apache.org/download-90.cgi>
-- 本文以apache-tomcat-7.0.52为例。
-- 解压到指定目录，如：`D:\apache-tomcat-7.0.52`。
-
-#### Java 8 下载
-
-- Oracle下载地址：[官网](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- 国内下载(免登录)：[官网](https://www.java.com/zh-CN/download/)
-
-直接运行安装包无脑C盘安装，本体不大安装路径建议不要有中文。
-
-### 配置Java环境变量
-
-- 打开系统环境变量编辑器，如：`设置 -> 系统 -> 系统信息 -> 高级系统设置 -> 环境变量 -> 系统变量`。
-- 找到`Path`变量，双击编辑，在变量值末尾添加`%JAVA_HOME%\bin`，确定。
-- 在系统变量新建一个`JAVA_HOME`变量名(没有就新建，存在就编辑)，将变量值修改为你安装的Java版本路径，如默认路径：`C:\Program Files\Java\jdk1.8.0_201`
-- 保存并退出即可。
-
-#### 检测Java安装是否成功
-
-- 打开命令提示符，输入`java -version`，如果出现版本信息，则说明Java安装成功。
-
-### 启动Apache Tomcat
-
-- 在解压地址的bin目录下找到`startup.bat`文件，双击运行。如：`D:\apache-tomcat-7.0.52\bin\startup.bat`。
-- 启动 startup.bat
-- 停止 shutdown.bat
-- 启动成功后，在命令提示符中会显示Tomcat的启动信息，如(启动信息无需复制)：
-
-```Tomcat
-Using CATALINA_BASE:   "D:\apache-tomcat-7.0.52"
-Using CATALINA_HOME:   "D:\apache-tomcat-7.0.52"
-Using CATALINA_TMPDIR: "D:\apache-tomcat-7.0.52\temp"
-Using JRE_HOME:        "C:\Program Files\Java\jdk1.8.0_201"
-Using CLASSPATH:       ".\lib\catalina-ant.jar;.\lib\catalina-ha.jar;.\lib\catalina-tribes.jar;.\lib\catalina.jar;.\lib\el-api.jar;.\lib\jasper-el.jar;.\lib\jasper.jar;.\lib\jsp-api.jar;.\lib\servlet-api.jar"
-Tomcat started.
-```
-
-### 访问Tomcat
-
-- 打开浏览器，在地址栏（<span style="color: #49c7a6;">地址栏不是搜索栏，是地址栏浏览器最顶部那个长长的栏</span>）输入`http://localhost:8080/` 或者 `http://127.0.0.1:8080/`，如果看到Tomcat的欢迎页面，则说明Tomcat配置成功。
-
-## Eclipse下载安装 + Tomcat
-
-### 下载安装
+## 下载安装
 
 - 下载地址：<https://www.eclipse.org/downloads/packages/>
 - 下载Eclipse IDE for Enterprise Java and Web Developers，本文以<span style="color: #49c7a6;">最新版</span>和<span style="color: #49c7a6;">2020版本</span>为例。
 - 压缩包版本即解压到指定目录，如：`D:\eclipse`，本文采取的<span style="color: #49c7a6;">最新版是程序包</span>、<span style="color: #49c7a6;">旧版本2020是压缩包形式。</span>
 
-### Eclipse新建动态Web项目
+## 配置Tomcat
+
+- [前往查看](./Tomcat安装配置.md)
+
+## Eclipse新建动态Web项目
 
 - 打开Eclipse，选择`File -> New -> Dynamic Web Project`，输入项目名称Project name，如：`myWeb`。
 - Target Runtime 选择 `New Runtime...` 添加Apache Tomcat版本，如： `Apache Tomcat v7.0`（<span style="color: #49c7a6;">Apache Tomcat 的版本是你安装的版本</span>），添加完成点击`Next`。
@@ -65,7 +19,7 @@ Tomcat started.
 - 折开后，<span style="color: #49c7a6;">新版本</span>在`src\main\webapp`下新建JSP文件，<span style="color: #49c7a6;">旧版本</span>在`WebContent`下新建JSP文件。
 - JSP模板文件选择HTML5,没有就选HTML。
 
-#### Java Resources 新建 Servlet
+### Java Resources 新建 Servlet
 
 新版本
 
@@ -81,7 +35,7 @@ src/com/example/MyServlet.java 或者 是一个文件路径，它表示在源代
 这个文件通常包含一个Java类，该类定义了一个Servlet。Servlet是Java EE规范中的一部分，用于处理客户端的请求并生成响应。
 :::
 
-### Eclipse运行访问
+## Eclipse运行访问
 
 - 右键选择`Run As -> Run on Server`，选择Tomcat服务器，点击`Finish`。
 
