@@ -2,9 +2,11 @@
 
 ## 1. 下载
 
-> 程序版本：[点击下载](https://dev.mysql.com/downloads/installer/)
+> 程序版本：[点击下载](https://dev.mysql.com/downloads/mysql/)
+> Windows (x86, 64-bit), MSI Installe
 >
 > 压缩包版：[点击下载](https://dev.mysql.com/downloads/mysql/)
+> Windows (x86, 64-bit), ZIP Archive
 
 ## 2. 安装
 
