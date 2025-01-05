@@ -200,7 +200,7 @@ export default defineConfig({
       text: '答案',
       items: [{
         text: '软件工程头歌答案',
-        link: "/doc/answer/SoftwareEngineeringAnswers"
+        link: "/doc/answer/SoftwareEngineeringAnswers.md"
       },]
     },
 
