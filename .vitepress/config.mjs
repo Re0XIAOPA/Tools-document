@@ -216,7 +216,7 @@ export default defineConfig({
         text: '工具',
         items: [{
           text: '代理工具&&推荐机场',
-          link: 'https://re0xiaopa.github.io/web-demo/'
+          link: 'https://re0xiaopa.github.io/ToolStore/'
         },]
       },
       {
@@ -245,7 +245,7 @@ export default defineConfig({
         },
         {
           text: 'omofun(官网复活啦)',
-          link: 'https://omoget.com/'
+          link: 'https://lanerc.app/'
         },
         {
           text: 'MX动漫(国漫&日漫)',
