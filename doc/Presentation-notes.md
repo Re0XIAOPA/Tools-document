@@ -11,7 +11,7 @@
 > <strong style="color:green;">可生电</strong>  <strong style="color:green;">高性能</strong>    <strong style="color:green;">无限制</strong>  <strong style="color:green;">养老服</strong>  <strong style="color:green;">生存服</strong>  <strong style="color:green;">离线服</strong>
 >
 ::: tip 掉落物注意事项
-服务器采用Fabric端，已添加掉落物清理的相关MOD，但在建造部分大型机器必须有针对于实体的处死装置
+服务器已添加掉落物清理的相关MOD，但在建造部分大型机器必须有针对于实体的处死装置
 :::
 
 ## 联系方式
